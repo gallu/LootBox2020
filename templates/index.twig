@@ -1,0 +1,24 @@
+{# index.twig #}
+<html>
+<head>
+  <title>がちゃ</title>
+</head>
+<body>
+<h1>アカウント登録</h1>
+<form  action="./register.php"  method="post">
+キャラクタ名<input name="pc_name"><br>
+emailっぽいもの<input name="email"><br>
+パスワード:6文字以上<input type="password" name="pw"><br>
+パスワード(再)<input type="password" name="pw2"><br>
+<button>アカウント登録をする</button>
+</form>
+
+<h1>ログイン</h1>
+<form  action="./login.php"  method="post">
+emailっぽいもの<input name="email"><br>
+パスワード<input type="password" name="pw"><br>
+<button>ログイン</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{#  box_gacha.twig  #}
+{% extends 'layout.twig' %}
+
+{% block contents %}
+<h2>Boxガチャ: sample</h2>
+
+残:{{ box_list_num }}枚<br>
+・<a href="./box_gacha_reset.php?id={{ id|url_encode }}">Boxのリセット</a><br>
+{% if 0 < box_list_num %}
+・<a href="./box_gacha_draw.php?id={{ id|url_encode }}">Boxがちゃを引く(残:{{ box_list_num }}枚)</a><br>
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{#  card_list.twig  #}
+{% extends 'layout.twig' %}
+
+{% block contents %}
+<table border="1">
+<tr>
+  <th>カード名
+  <th>枚数
+  <th>タイプ
+  <th>テキスト
+  <th>イラストレータ
+{% for key, val in card_list %}
+<tr>
+    {# <td>{{ val.card_id }} #}
+    <td>{{ val.card_name }}
+    <td>{{ val.num }}
+    <td>{{ val.card_type }}
+    <td>{{ val.card_text }}
+    <td>{{ val.card_illustrator }}
+{% endfor %}
+</table>
+
+{% endblock %}

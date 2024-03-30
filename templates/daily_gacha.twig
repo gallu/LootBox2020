@@ -1,0 +1,13 @@
+{#  daily_gacha.twig  #}
+{% extends 'layout.twig' %}
+
+{% block contents %}
+<h2>デイリーがちゃ</h2>
+
+{% if 0 != count %}
+もうデイリーがちゃ、引いたよ？ 明日よろ ノ<br>
+{% else %}
+<a href="./daily_gacha_draw.php">デイリーがちゃを引く！！</a><br>
+{% endif %}
+
+{% endblock %}

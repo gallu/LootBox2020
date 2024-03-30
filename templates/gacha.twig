@@ -1,0 +1,17 @@
+{#  gacha.twig  #}
+{% extends 'layout.twig' %}
+
+{% block contents %}
+
+<table border="1">
+{% for key, val in card_data %}
+<tr>
+    <td>{{ val.card_id }}
+    <td>{{ val.card_name }}
+    <td>{{ val.card_type }}
+    <td>{{ val.card_text }}
+    <td>{{ val.card_illustrator }}
+{% endfor %}
+</table>
+
+{% endblock %}

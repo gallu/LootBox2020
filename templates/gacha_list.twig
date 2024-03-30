@@ -1,0 +1,9 @@
+{#  gacha_list.twig  #}
+{% extends 'layout.twig' %}
+
+{% block contents %}
+<h1>がちゃ一覧</h1>
+{% for key, val in gacha_list %}
+    ・<a href="./gacha.php?gacha_id={{ val.gacha_id | e('url') }}">{{ val.gacha_name }}</a><br>
+{% endfor %}
+{% endblock %}
